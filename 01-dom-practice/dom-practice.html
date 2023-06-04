@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Practice3</title>
+    <link rel="stylesheet" href="styles/dom-practice.css" />
+  </head>
+  <body>
+    <p>YouTube Subscribe Button</p>
+    <button onclick="subscribe();" class="js-subscribe-button subscribe-button">
+      Subscribe
+    </button>
+
+    <p>Amazon cost calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = free shipping.</p>
+    <input
+      class="price-input"
+      type="text"
+      placeholder="Price of items"
+      onkeydown="
+      if (event.key === 'Enter')
+        displayCost();
+    "
+    />
+    <button
+      class="calculate-button"
+      onclick="
+      displayCost();
+    "
+      class="js-button-calculate"
+    >
+      Calculate
+    </button>
+    <p class="js-final-cost"></p>
+
+    <a href="rock-paper-scissors.html">
+      <p>Rock, paper, scissors</p>
+    </a>
+
+    <script src="scripts/dom-practice.js"></script>
+  </body>
+</html>

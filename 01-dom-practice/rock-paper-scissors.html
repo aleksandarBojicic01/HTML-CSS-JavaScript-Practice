@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Practice2</title>
+    <link rel="stylesheet" href="styles/rock-paper-scissors.css" />
+  </head>
+  <body>
+    <p class="rps-title">Rock paper scissors</p>
+    <button
+      class="move-button"
+      onclick="
+    computerMove = getComputerMove();
+    document.querySelector('.js-result2').innerHTML = `${getResult('Rock', computerMove)}`;
+    document.querySelector('.js-result1').innerHTML = `You <img src='icons/rock-emoji.png' class='move-icon'> <img src='icons/${computerMove}-emoji.png' class='move-icon'> computer.`;
+
+    "
+    >
+      <img class="move-icon" src="icons/rock-emoji.png" alt="" />
+    </button>
+    <button
+      class="move-button"
+      onclick="
+    computerMove = getComputerMove();
+    document.querySelector('.js-result2').innerHTML = `${getResult('Paper', computerMove)}`;
+    document.querySelector('.js-result1').innerHTML = `You <img src='icons/paper-emoji.png' class='move-icon'> <img src='icons/${computerMove}-emoji.png' class='move-icon'> computer.`;
+    "
+    >
+      <img class="move-icon" src="icons/paper-emoji.png" alt="" />
+    </button>
+    <button
+      class="move-button"
+      onclick="
+    let computerMove = getComputerMove();
+    document.querySelector('.js-result2').innerHTML = `${getResult('Scissors', computerMove)}`;
+    document.querySelector('.js-result1').innerHTML = `You <img src='icons/scissors-emoji.png' class='move-icon'> <img src='icons/${computerMove}-emoji.png' class='move-icon'> computer.`;
+"
+    >
+      <img class="move-icon" src="icons/scissors-emoji.png" alt="" />
+    </button>
+
+    <p class="js-result2 result2"></p>
+    <p class="js-result1"></p>
+    <p class="js-stats stats"></p>
+    <button
+      class="reset-score"
+      onclick="score.losses = 0;
+    score.ties = 0;
+    score.wins = 0;
+    updateStats();"
+    >
+      Reset score
+    </button>
+    <a href="dom-practice.html"> &lt; Back </a>
+
+    <script src="scripts/rock-paper-scissors.js"></script>
+  </body>
+</html>
