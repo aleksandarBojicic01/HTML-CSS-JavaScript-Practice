@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles/todo.css" />
+  </head>
+  <body>
+    <p class="title">Todo List</p>
+    <div class="div-todo-input">
+      <input class="js-text-box text-box" type="text" placeholder="Todo" />
+      <input class="date-picker" type="date" />
+      <button
+        class="js-add-button add-button"
+        onclick="addTodo(); updateTodo()"
+      >
+        Add
+      </button>
+    </div>
+    <div class="js-div-todo div-todo"></div>
+
+    <script src="scripts/todo.js"></script>
+  </body>
+</html>

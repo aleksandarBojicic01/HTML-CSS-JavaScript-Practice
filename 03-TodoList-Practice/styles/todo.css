@@ -1,0 +1,65 @@
+body {
+  font-family: Arial;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.div-todo, .div-todo-input {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+.text-box {
+  height: 25px;
+}
+
+.text-box, .date-picker {
+  font-size: 15px;
+  padding: 6px;
+}
+
+.add-button {
+  padding: 11.5px 25px;
+  background-color: green;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.add-button:active {
+  background-color: rgb(0, 197, 0);
+}
+
+.delete-btn {
+  padding: 8px 18px;
+  background-color: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.delete-btn:active {
+  background-color: rgb(175, 0, 0);
+}
+
+.div-todo-name, .div-todo-date {
+  display:inline-block;
+}
+
+.date-picker {
+  height: 25px;
+}
+
+.date-picker, .text-box {
+  border: solid 1px rgb(162, 162, 162);
+  border-radius: 2px;
+}
